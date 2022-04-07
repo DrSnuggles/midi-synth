@@ -19,6 +19,16 @@ I also started wondering if the step size of 1.0 is like real Synths did?? ??
 Idea: Make it analog again. i will do with knob code, as this is more a knob without too much audio logic inside. Next issue for virtual piano and knobs is leaving window while mous button pressed.
 But first i will try to make it work again.
 
+## Differences
+- Removed PWA
+- Removed Polymer
+- Reworked knobs a bit
+- VanillaJS
+- ES6 Import/Export
+- Digital Jockey DJ Deck MIDI input
+- Wider piano (matches the one i have here)
+- Persistent settings
+
 ## Knob
 - log scale
 - step size
@@ -27,30 +37,10 @@ But first i will try to make it work again.
 ## Idea
 I have a midi dj deck i do not use and want to build a digital synth out of the knobs.
 
-DJ Deck -> Web MIDI API -> AY/YM AudioWorkletProcessor
-Piano   -> Web MIDI API -> Tracker
-
-## Synth
-I will use the AY/YM backends i already have
-
-## Sequencer
-- secondary goal: lets go for a tracker style sequencer
-- or more a colourful
-- simple 16 pressable led buttons and that for different voices
-
-
-## Filter
-are mandatory, for sure
-
-## Recorder
-tracked format and rendered
+I also have a midi piano and in combination that should be nice hardware input.
 
 ## UI
-maybe my biggest hurdle. Want nice knobs, will have a look at bassoontracker. It got a lot i will need e.g.midi piano + tracker
-
-### Deck
-Left side = Plain Web Audio Oscillator
-Right side = AY/YM DSP
+Want nice knobs
 
 ## Links
 Main Source: https://github.com/cwilso/midi-synth
